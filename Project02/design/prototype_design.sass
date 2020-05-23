@@ -1,0 +1,220 @@
+
+/*regular wide screen*/
+@media screen and (min-width: 481px) and (max-width: 1200px)
+body
+	flex-direction: row
+	
+#date
+	color: blue
+
+/*the color is just to make sure the code itself is working, so the bug must be somewhere else*/
+
+/*narrow screen e.g.: iPhone5*/
+@media screen and (max-width: 480px)
+body
+	flex-direction: column
+
+#centerDevBanner
+	visibility:collapse
+
+#date
+	color: black /*using this attribute to see if the code itself works*/
+
+/*trying to hide the banner, but it doesn't work 
+  don't understand why!
+  seems like there is an issue with compiling it to css!*/
+
+header
+	background-color:  #501517
+	display: flex
+	justify-content: space-around
+	height: 100px
+	width: auto
+	padding: 25px
+
+/*navigation bars*/
+nav
+	background-color: #1A1A1A
+	position: relative
+	margin: 0
+	padding: 10px
+
+ul
+	text-align: left
+	list-style-type: none
+	margin: 0
+	padding: 0
+
+li
+	display: inline-block
+	margin-left: 50px
+
+li a
+	font-size: 20pt
+	color: white
+	text-align: center
+	padding: 10px
+	text-decoration: none
+	margin-left: 10px
+/*-----------nav-------------*/
+
+footer
+	background-color: #1A1A1A
+	display: flex
+	flex-flow: column-reverse
+	text-align: center
+
+footer > h3
+	align-self: center
+
+h3
+	color: white
+
+h2
+	padding: 10px
+
+article
+	display: flex
+	flex-flow: row wrap
+
+/*---classes---*/
+
+.wrapper
+	display: flex
+	flex-flow: row wrap
+	justify-content: space-between
+	margin: 1% 20% 2% 5%
+
+.wrapper2
+	display: flex
+	flex-flow: row wrap
+	justify-content: space-between
+	margin: 1% 20% 2% 5%
+	
+.wrapper3
+	display: flex
+	flex-flow: row wrap
+	justify-content: space-between
+	margin: 1% 5% 2% 5%
+
+.boxSqSmall
+	display: flex
+	width: 250px
+	height: 250px
+	object-fit: contain
+	
+.boxRectangle1
+	margin-top: 13px
+	border-color: black
+	border-style: solid
+	width: 100px
+	height: 500px
+	position: relative
+	float: right
+
+.boxRectangle2
+	margin-top: 13px
+	border-color: black
+	border-style: solid
+	width: 100px
+	height: 400px
+
+.container
+	display: flex
+	flex-flow: row wrap
+	justify-content: flex-start
+
+.boxSqBig
+	display: flex
+	padding: 2em
+	width: 400px
+	height: 400px
+
+.TextBoxSmall
+	color: white
+	border-color: black
+	border-style: solid
+	width: 250px
+	height: 65px
+	background-color: #171717
+	align-self: flex-end
+
+.TextBoxBig
+	color: white
+	border-color: black
+	border-style: solid
+	width: 400px
+	height: 100px
+	background-color: #171717
+	align-self: flex-end
+
+.text
+	border-style: solid
+	background-color: black
+	color: white
+	padding: 1em
+	position: absolute
+	margin-top: 200px
+
+.topNewsimgs
+	max-width: 250px
+
+.topNewsLinks
+	background-color: #171717
+	text-decoration: none
+	color: white
+
+.boxSqBigImgs
+	max-width: 400px
+
+.boxBanner
+	max-width: 200px
+
+.barLink
+	text-decoration: none
+	color: black
+
+.containerWrapper
+	display: flex
+
+/*---IDs---*/
+
+#logoBottom
+	align-self: flex-end
+
+#newspaperLogo
+	justify-content: flex-start
+	vertical-align: bottom
+	object-fit: cover
+
+#banner1
+	justify-content: flex-end
+	
+#date
+	display: flex
+	justify-content: flex-end
+
+#TopNewsBar
+	display: flex
+	background-color: #DDDDDD
+	margin-left: 5%
+	margin-right: 5%
+
+#PopularBar
+	display: flex
+	background-color: #DDDDDD
+	margin-right: 20%
+	margin-left: 5%
+	
+#centerDevBanner
+	display: flex
+	justify-content: center
+
+#CFBanner
+	justify-self: flex-end
+
+#fswd
+	width: 100px
+	height: auto
+
+
