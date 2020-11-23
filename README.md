@@ -1,6 +1,7 @@
 # CFLMS-Oxales-CodeReview02
 
-Second weekly project!
+Second Website Project
+# Newspaper
 
 
 Project description:
